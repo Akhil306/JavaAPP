@@ -1,18 +1,8 @@
-# Build output
 build/
 .gradle/
-
-# Git
 .git
-.gitignore
-
-# IDEs
 .idea/
 .vscode/
-
-# OS files
+node_modules/
 .DS_Store
 Thumbs.db
-
-# Node
-node_modules/
