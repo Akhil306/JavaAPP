@@ -1,12 +1,6 @@
-# Ignore build output
+# Build output
 build/
 .gradle/
-
-# Ignore all JARs by default
-*.jar
-
-# BUT allow Gradle wrapper jar (REQUIRED)
-!gradle/wrapper/gradle-wrapper.jar
 
 # Git
 .git
