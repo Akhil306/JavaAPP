@@ -8,7 +8,7 @@ WORKDIR /home/gradle/project
 COPY . .
 
 # Build using system Gradle (NOT gradlew)
-RUN gradle clean bootJar -x test --no-daemon
+# RUN gradle clean bootJar -x test --no-daemon
 
 # ======================
 # Runtime stage
