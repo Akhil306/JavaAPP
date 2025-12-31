@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.2.5'
+    id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+description = 'clinic-app'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Spring Boot Web
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // Apache Camel (Spring Boot integration)
+    implementation 'org.apache.camel.springboot:camel-spring-boot-starter:4.4.0'
+
+    // ✅ REQUIRED for .marshal().json()
+    implementation 'org.apache.camel:camel-jackson:4.4.0'
+
+    // Camel Kafka component
+    implementation 'org.apache.camel:camel-kafka:4.4.0'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+

@@ -1,0 +1,44 @@
+# Gradle
+.gradle/
+build/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+.dockerignore
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# User-specific files
+local.properties
+
+# Maven (if ever used)
+target/
+
+# Kind/kubernetes
+.kube/
+
+# Other
+node_modules/
+
