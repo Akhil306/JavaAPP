@@ -1,0 +1,24 @@
+# Ignore build output
+build/
+.gradle/
+
+# Ignore all JARs by default
+*.jar
+
+# BUT allow Gradle wrapper jar (REQUIRED)
+!gradle/wrapper/gradle-wrapper.jar
+
+# Git
+.git
+.gitignore
+
+# IDEs
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
